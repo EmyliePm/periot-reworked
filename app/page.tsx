@@ -4,6 +4,7 @@ import Intro from "@/components/Intro/Intro";
 import FeaturedWork from "@/components/FeaturedWork/FeaturedWork";
 import Process from "@/components/Process/Process";
 import CollectionIntro from "@/components/CollectionIntro/CollectionIntro";
+import Contact from "@/components/Contact/Contact";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <FeaturedWork />
         <Process />
         <CollectionIntro />
+        <Contact />
       </main>
     </>
   );
