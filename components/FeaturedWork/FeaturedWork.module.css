@@ -1,0 +1,125 @@
+.work {
+    min-height: 100vh;
+    padding: 80px 4vw 120px;
+  
+    background: var(--paper);
+    color: var(--ink);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+  
+    margin-bottom: 90px;
+  
+    font-size: 0.65rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--stone);
+  }
+  
+  .title {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+  
+    margin-bottom: 70px;
+  }
+  
+  .number {
+    margin-top: 12px;
+  
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    color: var(--stone);
+  }
+  
+  .title h2 {
+    font-size: clamp(4rem, 8vw, 8rem);
+    line-height: 0.78;
+    letter-spacing: -0.06em;
+    font-weight: 500;
+  }
+  
+  .title em {
+    font-family: var(--font-serif), serif;
+    font-weight: 500;
+  }
+  
+  .project {
+    display: grid;
+    grid-template-columns: minmax(0, 2.2fr) minmax(250px, 0.8fr);
+    gap: 5vw;
+    align-items: end;
+  }
+  
+  .imagePlaceholder {
+    aspect-ratio: 16 / 9;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background: #d7d1c5;
+  
+    font-size: 0.65rem;
+    letter-spacing: 0.16em;
+    color: var(--stone);
+  }
+  
+  .details {
+    padding-bottom: 8px;
+  }
+  
+  .label {
+    display: block;
+  
+    margin-bottom: 12px;
+  
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--stone);
+  }
+  
+  .details p {
+    max-width: 320px;
+  
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .rule {
+    height: 1px;
+  
+    margin: 32px 0;
+  
+    background: #cbc5ba;
+  }
+  
+  @media (max-width: 750px) {
+    .work {
+      padding: 60px 20px 80px;
+    }
+  
+    .header {
+      margin-bottom: 60px;
+    }
+  
+    .title {
+      margin-bottom: 50px;
+    }
+  
+    .title h2 {
+      font-size: clamp(3.5rem, 16vw, 6rem);
+    }
+  
+    .project {
+      grid-template-columns: 1fr;
+      gap: 35px;
+    }
+  
+    .imagePlaceholder {
+      aspect-ratio: 4 / 5;
+    }
+  }
