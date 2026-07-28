@@ -1,0 +1,118 @@
+.process {
+    min-height: 100vh;
+    padding: 80px 4vw 70px;
+  
+    background: var(--olive);
+    color: var(--paper);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+  
+    margin-bottom: 110px;
+  
+    font-size: 0.65rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    opacity: 0.6;
+  }
+  
+  .intro {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 8vw;
+    align-items: end;
+  
+    margin-bottom: 100px;
+  }
+  
+  .intro h2 {
+    font-size: clamp(3.5rem, 7vw, 7.5rem);
+    line-height: 0.86;
+    letter-spacing: -0.055em;
+    font-weight: 500;
+  }
+  
+  .intro h2 em {
+    font-family: var(--font-serif), serif;
+    font-weight: 500;
+  }
+  
+  .intro > p {
+    max-width: 390px;
+  
+    font-size: 0.95rem;
+    line-height: 1.7;
+  
+    color: rgba(241, 238, 231, 0.72);
+  }
+  
+  .steps {
+    border-top: 1px solid rgba(241, 238, 231, 0.25);
+  }
+  
+  .step {
+    display: grid;
+    grid-template-columns: 80px 1fr minmax(250px, 0.7fr);
+    align-items: center;
+    gap: 30px;
+  
+    padding: 32px 0;
+  
+    border-bottom: 1px solid rgba(241, 238, 231, 0.25);
+  }
+  
+  .number {
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    opacity: 0.55;
+  }
+  
+  .step h3 {
+    font-size: clamp(2.5rem, 4vw, 4.5rem);
+    line-height: 1;
+    letter-spacing: -0.04em;
+    font-weight: 500;
+  }
+  
+  .step p {
+    max-width: 400px;
+  
+    font-size: 0.9rem;
+    line-height: 1.6;
+  
+    color: rgba(241, 238, 231, 0.72);
+  }
+  
+  @media (max-width: 750px) {
+    .process {
+      padding: 60px 20px 50px;
+    }
+  
+    .header {
+      margin-bottom: 70px;
+    }
+  
+    .intro {
+      grid-template-columns: 1fr;
+      gap: 40px;
+  
+      margin-bottom: 70px;
+    }
+  
+    .intro h2 {
+      font-size: clamp(3.3rem, 14vw, 6rem);
+    }
+  
+    .step {
+      grid-template-columns: 45px 1fr;
+      gap: 15px;
+  
+      padding: 28px 0;
+    }
+  
+    .step p {
+      grid-column: 2;
+    }
+  }
