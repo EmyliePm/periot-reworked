@@ -1,8 +1,10 @@
 :root {
-  --paper: #f1eee7;
-  --ink: #191918;
-  --stone: #817c72;
-  --olive: #4d5548;
+  --paper: #eee7dc;
+  --ink: #202a32;
+  --stone: #81786c;
+  --midnight: #1e2b39;
+  --clay: #a9684f;
+  --sand: #d4c2aa;
 }
 
 * {
